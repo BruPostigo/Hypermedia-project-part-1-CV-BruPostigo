@@ -32,6 +32,8 @@ Roboto (--font-main): Used for body text, providing high readability and a neutr
 
 Layout and Responsiveness: The design enforces a fixed maximum width for content containers (1100px) and uses padding to keep content centered. Crucially, the full-screen height for each section (height: 100vh;) forces the user to interact with the site section-by-section, mimicking a slide presentation and ensuring focus. The navigation links are bold, rounded, and use a clear, professional hover effect (color change and slight lift) to reinforce interactivity. The use of large Font Awesome icons in the contact section further reinforces the site's modern, accessible, and functional visual identity.
 
+Mobile Fix Implementation: Furthermore, to guarantee perfect rendering on smaller screens and prevent content from being cut off or obscured—a common issue with fixed 100vh sections—the CSS was updated using a media query. This query overrides min-height: 100vh with min-height: auto and implements safe padding (padding: 60px 0) on mobile, ensuring vertical stacking and adequate space for all sectional titles and content. The navigation links also stack vertically to improve tap target size and usability on mobile touchscreens. The use of large Font Awesome icons in the contact section further reinforces the site's modern, accessible, and functional visual identity.
+
 
 LINKS:
 
