@@ -39,5 +39,7 @@ Layout and Responsiveness: The design enforces a fixed maximum width for content
 
 
 LINKS:
+
 Figma project: https://www.figma.com/design/J6VnldC2VJNKAFbCXUGBzj/cv-bru-postigo?node-id=0-1&t=itpEpaZ3IOl5iEff-1
+
 CV: https://brupostigo.github.io/Hypermedia-project-part-1-CV-BruPostigo/
