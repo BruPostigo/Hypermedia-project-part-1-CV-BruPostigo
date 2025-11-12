@@ -1,0 +1,218 @@
+
+:root {
+    
+    --color-dark: #2c2c2c; 
+    --color-primary: #8b0000; 
+    --color-accent: #e74c3c; 
+    --color-light: #ffffff; 
+    --color-text-dark: #b0b0b0; 
+    --color-button-grey: #4c4c4c; 
+    
+    
+    --font-header: 'Montserrat', sans-serif; 
+    --font-main: 'Roboto', sans-serif; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-main);
+    line-height: 1.6;
+    background-color: var(--color-dark); 
+    color: var(--color-light);
+}
+
+.container {
+    max-width: 1100px; 
+    margin: 0 auto;
+    padding: 0 40px; 
+}
+
+.content-section {
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    padding: 0 0; 
+}
+
+.dark-bg {
+    background-color: var(--color-dark);
+    color: var(--color-light);
+}
+
+.primary-bg {
+    background-color: var(--color-primary);
+    color: var(--color-light);
+}
+
+.text-center {
+    text-align: center;
+}
+
+h2 {
+    font-family: var(--font-header); 
+    font-size: 3em; 
+    margin-bottom: 50px;
+    font-weight: 700;
+    color: var(--color-accent); 
+    text-transform: uppercase;
+    letter-spacing: 2px; 
+}
+
+
+.hero-section {
+    height: 100vh; 
+    background: url('fons.jpg') center top / cover no-repeat;
+    position: relative;
+}
+
+.header-overlay {
+    background-color: rgba(139, 0, 0, 0.6); 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.main-nav {
+    position: absolute;
+    top: 50%; 
+    transform: translateY(-50%); 
+    left: 0;
+    right: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    padding: 0 80px; 
+}
+
+.nav-link {
+    font-family: var(--font-header); 
+    font-size: 1.8em; 
+    padding: 18px 35px; 
+    
+    background-color: var(--color-button-grey); 
+    color: var(--color-light);
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all 0.3s ease; 
+    border-radius: 25px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+}
+
+.nav-link:hover {
+    background-color: var(--color-accent); 
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px); 
+}
+
+
+.about-me-layout {
+    display: flex;
+    align-items: center;
+    gap: 80px; 
+    padding: 50px 20px; 
+}
+
+.about-me-layout h2 {
+    color: var(--color-accent);
+    margin-top: 0; 
+}
+
+.about-me-layout .text-content {
+    flex: 2;
+    padding-right: 20px;
+}
+
+.about-me-layout .image-content {
+    flex: 1;
+}
+
+.about-me-layout img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border: 5px solid var(--color-accent); 
+    border-radius: 8px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+.job-entry {
+    max-width: 700px;
+    margin: 0 auto 30px auto; 
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); 
+}
+
+.job-entry h3 {
+    font-family: var(--font-header);
+    font-size: 1.6em;
+    color: var(--color-light);
+    margin-bottom: 5px;
+}
+
+.job-dates {
+    font-style: italic;
+    color: var(--color-text-dark);
+    margin-bottom: 10px;
+}
+
+
+.contact-info h2 {
+    color: var(--color-light); 
+    margin-bottom: 70px;
+}
+
+.contact-icons-grid {
+    display: flex;
+    justify-content: center;
+    gap: 80px; 
+}
+
+.contact-icon-link {
+    text-decoration: none; 
+    color: var(--color-light); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-icon {
+    font-size: 4em; 
+    color: var(--color-accent); 
+    margin-bottom: 15px;
+    transition: color 0.3s;
+}
+
+.contact-icon-link:hover {
+    color: var(--color-accent); 
+    transform: translateY(-5px); 
+}
+
+.contact-icon-link:hover .contact-icon {
+    color: var(--color-light); 
+}
+
+.icon-text {
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+
+footer {
+    padding: 20px 0;
+    background-color: var(--color-dark);
+    text-align: center;
+    font-size: 0.8em;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
